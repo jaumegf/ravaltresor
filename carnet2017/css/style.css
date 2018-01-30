@@ -1,0 +1,504 @@
+﻿body {
+	font-family: Verdana, Calibri, Segoe UI, Arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+   body { font-size: 1.15em; }
+}
+
+.invisible {  display: none; }
+.right { float: right; }
+.left { float: right; }
+.fontSize085em {font-size: 0.85em; } .fontSize080em {font-size: 0.80em; }
+.fontSize065em {font-size: 0.65em; }
+.fontSize12em {font-size: 1.2em; } .fontSize14em {font-size: 1.4em; } .fontSize15em {font-size: 1.5em; } 
+.bold { font-weight: bold; }
+.colorError { color: red; }
+.margin20 {  margin: 20px; }
+.padding20 { padding: 20px; } .padding10 { padding: 10px; }
+.color333 { color: #333; }
+
+h1 { color: darkgreen; }
+
+h3 { padding-left: 10px;}
+
+a {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+#content {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+    #content .data {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 3px 10px;
+        color: #333;
+        margin-top: 15px;
+    }
+
+
+.marcadorGM
+{
+  background-image: url('../img/marcadorGoogleMaps.png'); 
+  background-repeat: no-repeat;
+  background-position:  5px 25px;
+}
+
+.cabecera {
+    box-shadow: 1px 1px #5b4c61;
+  background-image: url('../img/logo130.png'); 
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-color: #eef8f6;
+    height: 145px;
+}
+
+
+.filaColorAnyo {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0px;
+    display: block;
+    background-color: #71597b;
+    color: white;
+    padding: 5px;
+}
+
+    .filaColorAnyo #validoHasta {
+        font-size: 0.85em;
+    }
+    
+    div.sections div {
+        display: block;
+        margin: 5px 0px;
+    }
+
+    div.sections div button {
+        width: 100%;
+        background-color: #d8eadc;
+        border-radius: 4px;
+        box-shadow: 1px 1px #999;
+        font-size: 1.3em;
+        color: #111;
+        height:  45px;
+    }
+
+
+#tram {
+   position: relative;
+   width: 100%;
+   height:290px;
+
+   border-radius: 3px;
+   box-shadow: 1px 1px 1px 1px white;
+}
+
+    #tram img.tram {
+        position: absolute;
+        top: -10px;
+        left: 25px;
+    }
+
+#tramPista {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    background-image: url('../img/TramPista.png');
+    background-repeat: no-repeat;
+    background-position: -880px -30px;
+}
+
+    #tram #destinacio {
+       font-size: 0.85em;
+       position: absolute;
+       top: 2px; left: 5px;
+       width: 100px;
+       background-color:#EEE;
+       border: outset 1px grey;
+       border-radius: 5px;
+       padding: 5px;
+       margin: 5px;
+       box-shadow: 1px 1px grey;
+    }
+
+
+    #tram #properTram {
+       font-size: 1.25em;
+       font-weight: bold;
+       position: absolute;
+       top: 55px; left: 20px;
+       color: #333;
+    }
+
+    #tram #horesPropersTrams {
+        font-size: 0.85em;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding: 5px;
+    }
+
+    #tram #horesPropersTrams label { display:inline-block; width: 55px; text-align: center;}
+
+        #tram label {
+            background-color: #EEE;
+            border: outset 1px grey;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 1px 1px grey;
+        }
+
+
+            #tram label.grao, label.grao {
+                background-color:  #d8eadc;
+            }
+
+            #tram label.ribalta, label.ribalta {
+                background-color:#66AACC; 
+            }
+
+
+        label.llegenda {
+            font-size: 0.65em !important;
+            display: inline-block;
+            width: 105px;
+        }
+
+
+    #tram #llegendaGrao {
+        position: absolute;
+        top: 100px;
+        left: 15px;
+        width: 105px;
+    }
+
+    #tram #llegendaRibalta {
+        position: absolute;
+        top: 135px;
+        left: 15px;
+        width: 105px;
+    }
+
+
+        #tram #marqueeTram {
+           font-size: 0.85em;
+           position: absolute;
+           top: 180px; left: 5px;
+        }
+
+
+
+        #tram #bottom {
+           font-size: 0.60em;
+           font-weight: bold;
+           position: absolute;
+           top: 220px; left: 5px;
+        }
+
+
+
+
+        #tram #bottom2 {
+           font-size: 0.70em;
+           font-style: italic;
+           position: absolute;
+           top: 235px; left: 15px;
+        }
+
+
+#tram img.tramToolbar {
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px grey;
+    height:29px;
+    margin: -9px 0px;
+}
+
+
+#tram #togglePlayer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+    #tram #togglePlayer img {
+        height: 35px;
+    }
+
+
+
+#enquestes .toolbar {
+    margin: 10px 0px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#enquestes .toolbar .left {float: left; margin-left: 10px; }
+#enquestes .toolbar .right { float: right; margin-right: 10px; }
+
+#enquestes .toolbar img {
+    height: 29px;
+    margin: -9px 0px;
+}
+
+
+.noticies {
+   }
+
+.noticies div.content {
+	padding: 5px;
+}
+    .noticies div.content p {
+        margin: 0px 10px;
+    }
+
+
+.links {
+	/*height: 270px;*/
+	padding-left: 10px;
+}
+
+    .links div.row {
+        display: table;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .links div.dlg {
+        border: outset 1px grey;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 5px;
+        float: left;
+        box-shadow: 2px 2px grey;
+    }
+
+    .links a {
+        text-decoration: none;
+        margin: 0px;
+    }
+
+
+        .links a img {
+            width: 55px;
+        }
+
+    .links div.icoDesc {
+        font-size: 0.95em;
+        padding: 20px 5px;
+        margin: 5px;
+        float: left;
+        width: 250px;
+        color: #1a3801;
+    }
+
+
+#activitats {
+    padding: 10px;
+}
+
+.comercios {
+    height: 220px;
+    background-image: url("../img/comercios.jpg");
+}
+
+  .comercios #comercio {
+	color: #999;
+	font-weight: normal;
+    font-size: 1.3em;
+    font-family: Calibri;
+  }
+
+.canvasQR {  }
+
+.dlgActivitats {
+    background-color: #d92202;
+}
+
+.dlgSMC {
+    background-color: #ea2423;
+}
+
+.dlgTram {
+    background-color: white;
+}
+
+.dlgCitaMetge {
+    background-color: white;
+}
+
+.dlgACCS {
+    background-color: white;
+}
+
+.EspaiMenut {
+    background-color: #fec200;
+}
+
+.dlgFacebook {
+    background-color: #3c5b9f;
+}
+
+.dlgTwitter {
+    background-color: #17aad4;
+}
+
+.dlgElTemps {
+    background-color: #71c4ee;
+}
+
+.dlgWhatssapp {
+    background-color: green;
+}
+
+.cazasocios {
+    background-color: #ff4c4c;
+}
+
+.dlgJocs {
+    background-color: #2a6eb7;
+}
+
+
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+    .marquee.tram {
+        height: 25px;
+    }
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;  /* show the marquee just outside the paragraph */
+    animation: marquee 30s linear 2;
+font-size: 1.1em;
+color: #444;
+}
+
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+
+#enquestes .enquesta {
+    margin: 5px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.enquesta div {
+    padding: 10px;
+
+}
+
+
+.enquesta .descripcio {
+     font-size: 1.3em;
+}
+
+.enquesta .respostes div {
+   border-radius: 2px;
+    box-shadow: 1px 1px 1px 1px #EEE;
+   margin: 4px 0px;
+}
+
+.vot {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #444;
+    font-style: italic;
+    background-color: #EEE;
+} 
+
+
+.helpEnquesta {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.7em;
+    color: #777;
+}
+
+.helpEnquesta p {
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+    [type="radio"]:checked + label {
+        font-weight: bold;
+    }
+    
+    
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #333;
+    }
+
+        [type="radio"]:checked + label:before,
+        [type="radio"]:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+            background: #fff;
+        }
+
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #d8eadc;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        [type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        [type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
