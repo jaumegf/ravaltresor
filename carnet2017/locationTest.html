@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
   <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-  <script type="text/javascript" src="location.js?v=20180129-v2"></script>
+  <script type="text/javascript" src="location.js?v=20180130-v1"></script>
 
     <style>
         #gps {  
@@ -11,36 +11,41 @@
             background-image: url('img/radar.jpg'); 
             background-repeat: no-repeat;
             background-position:  40px 55px;
+            position: relative;
         }
 
-        #distancia {
-            margin-top: 130px;
-            margin-left: 120px;
-            font-weight: bold;
-            font-size: 2.2em;
-            color: white;
-        }
+            #distancia {
+                 position: absolute;
+                 top: 190px; left: 150px;
+                font-weight: bold;
+                
+                font-size: 2.2em;
+                color: white;
+            }
 
-        #premio {
-            font-weight: bold;
-            font-size: 2.2em;
-        }
+            #premio {
+                position: absolute;
+                top: 150px; left: 110px;
+                font-weight: bold;
+                font-size: 2.2em;
+            }
 
     </style>
 </head>
 
 <body>
 
+    <div>
+        <span id="posicion">  <b>Consultando posicio&acute;n GPS..</b> </span> 
+    </div>
 
     <div id="gps">
-        <span id="posicion">  <b>Consultando posicio&acute;n GPS..</b> </span> 
-       <div id="distancia"> </div> 
-
+         <div id="distancia"> </div> 
+        <div id="premio" style="visibility:hidden;"><img src="img/dragonball1.png" /></div>
     </div>
     <br />
 
 
-<div id="premio"></div>
 
 
 <a href="" id="gmaps" target="blank">Obre mapa</a>
