@@ -28,7 +28,8 @@ function successCallback(position) {
     $("#gmaps").attr("href", "https://www.google.com/maps/@" + position.coords.latitude + "," + position.coords.longitude + ",18z");
 
     if (distancia <= 30) {
-        $("#premio").html("HAS ENCONTRADO EL TESORO!!");
+        //$("#premio").html("HAS ENCONTRADO EL TESORO!!");
+        $("#premio").removeAttr("style", "visibility: hidden;");
     }
  }
 
