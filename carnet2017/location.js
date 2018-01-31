@@ -21,7 +21,7 @@ function successCallback(position) {
     $("#posicion").html("lat. " + position.coords.latitude + " long. " + position.coords.longitude);
     
 
-    var distancia = calcCrow(position.coords.latitude, position.coords.longitude, 39.98903, -0.0645063);
+    var distancia = calcCrow(position.coords.latitude, position.coords.longitude, 39.988926,-0.063321);
 
     $("#distancia").html(distancia.toFixed(0));
 
